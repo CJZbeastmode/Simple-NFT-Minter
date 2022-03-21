@@ -1,0 +1,22 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.4.0
+reports:
+  exclude_contracts:
+    - ERC721
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0'
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY}
+networks:
+  development:
+    keyhash: '0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311'
+    fee: 100000000000000000
+  rinkeby:
+    keyhash: '0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311'
+    fee: 100000000000000000 # 0.1
+  mainnet:
+    keyhash: '0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311'
+    fee: 1000000000000000000 # 0.01
