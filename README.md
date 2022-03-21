@@ -7,7 +7,7 @@ This repository enables users to mint their own NFTs in a local environment (gan
 
 ## Install
 ```
-git clone
+git clone https://github.com/CJZbeastmode/Simple-NFT-Minter
 ```
 
 
